@@ -1,0 +1,14 @@
+{
+    "name": "Kill Twitter What's happening Sidebar",
+    "description": "Build an Extension!",
+    "version": "1.0",
+    "manifest_version": 2,
+
+    "permissions": ["activeTab"],
+
+    "content_scripts": [{
+       "matches": ["https://twitter.com/*"],
+       "run_at": "document_idle",
+       "js": ["src/content_script.js"]
+    }]
+}
